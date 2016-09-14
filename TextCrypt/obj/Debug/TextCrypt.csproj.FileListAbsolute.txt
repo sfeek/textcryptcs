@@ -1,0 +1,55 @@
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe.config
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.pdb
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csprojResolveAssemblyReference.cache
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmTextCrypt.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.Properties.Resources.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csproj.GenerateResource.Cache
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.exe
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.pdb
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmFriendsKeys.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmYourKeys.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmSettings.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetNewKey.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword1.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword2.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe.config
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.exe
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.pdb
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\bin\Debug\TextCrypt.pdb
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csprojResolveAssemblyReference.cache
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmFriendsKeys.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetNewKey.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword1.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword2.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmSettings.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmTextCrypt.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmYourKeys.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.Properties.Resources.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csproj.GenerateResource.Cache
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPubKey.resources
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe.manifest
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\bin\Debug\TextCrypt.application
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.exe.manifest
+C:\Users\shane.feek.STRUCTURETEC\Documents\Visual Studio 2015\Projects\TextCrypt\TextCrypt\obj\Debug\TextCrypt.application
+C:\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe.config
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.exe
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.pdb
+C:\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe.manifest
+C:\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.application
+C:\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.exe
+C:\SourceCode\TextCrypt\TextCrypt\bin\Debug\TextCrypt.pdb
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csprojResolveAssemblyReference.cache
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmFriendsKeys.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetNewKey.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword1.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPassword2.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmSettings.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmTextCrypt.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmYourKeys.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.frmGetPubKey.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.Properties.Resources.resources
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.csproj.GenerateResource.Cache
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.exe.manifest
+C:\SourceCode\TextCrypt\TextCrypt\obj\Debug\TextCrypt.application
