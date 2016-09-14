@@ -313,7 +313,11 @@ namespace TextCrypt
                         Cursor.Current = Cursors.Default;
                         return;
                     }
+
                     txtMainText.Text = "Downloaded file: " + fileStorePath + fileName;
+
+                    // Set cursor as default arrow
+                    Cursor.Current = Cursors.Default;
                     return;
                 }
 
