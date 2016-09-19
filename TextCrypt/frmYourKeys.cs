@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace TextCrypt
 {
@@ -25,6 +27,9 @@ namespace TextCrypt
             // Event for Combo Box Select
             this.cmbKeyPairName.SelectedIndexChanged += new System.EventHandler(cmbKeyPairName_SelectedIndexChanged);
 
+            // Event for Text Box Change
+            this.txtPublicKey.TextChanged += new System.EventHandler(txtPublicKey_TextChanged);
+
             // Event to refresh form on activate
             this.Activated += frmYourKeys_Activated;
         }
@@ -33,6 +38,48 @@ namespace TextCrypt
         private void btnCopy_Click(object sender, EventArgs e)
         {
             if (txtPublicKey.Text != String.Empty) Clipboard.SetText(txtPublicKey.Text);
+        }
+
+        // Update Finger Print
+        private void txtPublicKey_TextChanged(object sender, EventArgs e)
+        {
+            string pKey;
+
+            pKey = RemoveWhitespace(txtPublicKey.Text);
+            pKey = pKey.Replace("BEGINPUBLICKEY", String.Empty);
+            pKey = pKey.Replace("ENDPUBLICKEY", String.Empty);
+            pKey = pKey.Replace("-", String.Empty);
+
+            lblFingerPrint.Text = MD5Hash(pKey);
+        }
+
+        // Remove Whitespace
+        public string RemoveWhitespace(string str)
+        {
+            try
+            {
+                return string.Join(String.Empty, str.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
+            }
+            catch { return String.Empty; }
+        }
+
+        // Compute SHA 1 finger print
+        private static String MD5Hash(String value)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Finger Print : ");
+
+            using (MD5 md5 = System.Security.Cryptography.MD5.Create())
+            {
+                Encoding enc = Encoding.UTF8;
+                Byte[] result = md5.ComputeHash(System.Text.Encoding.ASCII.GetBytes(value));
+
+                foreach (Byte b in result)
+                    sb.Append(b.ToString("x2")+" ");
+            }
+
+            return sb.ToString();
         }
 
         // Update key name list

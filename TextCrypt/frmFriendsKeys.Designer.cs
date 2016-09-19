@@ -35,6 +35,7 @@
             this.btnDeleteKey = new System.Windows.Forms.Button();
             this.cmbPublicKeyName = new System.Windows.Forms.ComboBox();
             this.btnUpdateKey = new System.Windows.Forms.Button();
+            this.lblFingerPrint = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtPublicKey
@@ -51,7 +52,7 @@
             // lblPublicKeyName
             // 
             this.lblPublicKeyName.AutoSize = true;
-            this.lblPublicKeyName.Location = new System.Drawing.Point(47, 172);
+            this.lblPublicKeyName.Location = new System.Drawing.Point(47, 186);
             this.lblPublicKeyName.Name = "lblPublicKeyName";
             this.lblPublicKeyName.Size = new System.Drawing.Size(88, 13);
             this.lblPublicKeyName.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // btnAddKey
             // 
-            this.btnAddKey.Location = new System.Drawing.Point(47, 208);
+            this.btnAddKey.Location = new System.Drawing.Point(47, 222);
             this.btnAddKey.Name = "btnAddKey";
             this.btnAddKey.Size = new System.Drawing.Size(111, 23);
             this.btnAddKey.TabIndex = 3;
@@ -69,7 +70,7 @@
             // 
             // btnDeleteKey
             // 
-            this.btnDeleteKey.Location = new System.Drawing.Point(344, 208);
+            this.btnDeleteKey.Location = new System.Drawing.Point(344, 222);
             this.btnDeleteKey.Name = "btnDeleteKey";
             this.btnDeleteKey.Size = new System.Drawing.Size(111, 23);
             this.btnDeleteKey.TabIndex = 4;
@@ -80,14 +81,14 @@
             // cmbPublicKeyName
             // 
             this.cmbPublicKeyName.FormattingEnabled = true;
-            this.cmbPublicKeyName.Location = new System.Drawing.Point(141, 169);
+            this.cmbPublicKeyName.Location = new System.Drawing.Point(141, 183);
             this.cmbPublicKeyName.Name = "cmbPublicKeyName";
             this.cmbPublicKeyName.Size = new System.Drawing.Size(121, 21);
             this.cmbPublicKeyName.TabIndex = 7;
             // 
             // btnUpdateKey
             // 
-            this.btnUpdateKey.Location = new System.Drawing.Point(196, 208);
+            this.btnUpdateKey.Location = new System.Drawing.Point(196, 222);
             this.btnUpdateKey.Name = "btnUpdateKey";
             this.btnUpdateKey.Size = new System.Drawing.Size(111, 23);
             this.btnUpdateKey.TabIndex = 8;
@@ -95,11 +96,21 @@
             this.btnUpdateKey.UseVisualStyleBackColor = true;
             this.btnUpdateKey.Click += new System.EventHandler(this.btnUpdateKey_Click);
             // 
+            // lblFingerPrint
+            // 
+            this.lblFingerPrint.AutoSize = true;
+            this.lblFingerPrint.Location = new System.Drawing.Point(47, 158);
+            this.lblFingerPrint.Name = "lblFingerPrint";
+            this.lblFingerPrint.Size = new System.Drawing.Size(66, 13);
+            this.lblFingerPrint.TabIndex = 9;
+            this.lblFingerPrint.Text = "Finger Print :";
+            // 
             // frmFriendsKeys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 243);
+            this.ClientSize = new System.Drawing.Size(501, 257);
+            this.Controls.Add(this.lblFingerPrint);
             this.Controls.Add(this.btnUpdateKey);
             this.Controls.Add(this.cmbPublicKeyName);
             this.Controls.Add(this.btnDeleteKey);
@@ -109,6 +120,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(517, 296);
+            this.MinimumSize = new System.Drawing.Size(517, 296);
             this.Name = "frmFriendsKeys";
             this.Text = "Manage Friend\'s Keys";
             this.ResumeLayout(false);
@@ -124,5 +137,6 @@
         private System.Windows.Forms.Button btnDeleteKey;
         private System.Windows.Forms.ComboBox cmbPublicKeyName;
         private System.Windows.Forms.Button btnUpdateKey;
+        private System.Windows.Forms.Label lblFingerPrint;
     }
 }

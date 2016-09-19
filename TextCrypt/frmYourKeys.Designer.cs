@@ -36,6 +36,7 @@
             this.btnAddKeyPair = new System.Windows.Forms.Button();
             this.btnUpdateKeyPair = new System.Windows.Forms.Button();
             this.btnDeleteKeyPair = new System.Windows.Forms.Button();
+            this.lblFingerPrint = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtPublicKey
@@ -53,7 +54,7 @@
             // lblKeyPairName
             // 
             this.lblKeyPairName.AutoSize = true;
-            this.lblKeyPairName.Location = new System.Drawing.Point(52, 172);
+            this.lblKeyPairName.Location = new System.Drawing.Point(53, 184);
             this.lblKeyPairName.Name = "lblKeyPairName";
             this.lblKeyPairName.Size = new System.Drawing.Size(77, 13);
             this.lblKeyPairName.TabIndex = 1;
@@ -62,14 +63,14 @@
             // cmbKeyPairName
             // 
             this.cmbKeyPairName.FormattingEnabled = true;
-            this.cmbKeyPairName.Location = new System.Drawing.Point(135, 169);
+            this.cmbKeyPairName.Location = new System.Drawing.Point(136, 181);
             this.cmbKeyPairName.Name = "cmbKeyPairName";
             this.cmbKeyPairName.Size = new System.Drawing.Size(121, 21);
             this.cmbKeyPairName.TabIndex = 2;
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(338, 166);
+            this.btnCopy.Location = new System.Drawing.Point(339, 178);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(75, 23);
             this.btnCopy.TabIndex = 3;
@@ -79,7 +80,7 @@
             // 
             // btnAddKeyPair
             // 
-            this.btnAddKeyPair.Location = new System.Drawing.Point(41, 208);
+            this.btnAddKeyPair.Location = new System.Drawing.Point(42, 220);
             this.btnAddKeyPair.Name = "btnAddKeyPair";
             this.btnAddKeyPair.Size = new System.Drawing.Size(111, 23);
             this.btnAddKeyPair.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // btnUpdateKeyPair
             // 
-            this.btnUpdateKeyPair.Location = new System.Drawing.Point(190, 208);
+            this.btnUpdateKeyPair.Location = new System.Drawing.Point(191, 220);
             this.btnUpdateKeyPair.Name = "btnUpdateKeyPair";
             this.btnUpdateKeyPair.Size = new System.Drawing.Size(111, 23);
             this.btnUpdateKeyPair.TabIndex = 5;
@@ -99,7 +100,7 @@
             // 
             // btnDeleteKeyPair
             // 
-            this.btnDeleteKeyPair.Location = new System.Drawing.Point(338, 208);
+            this.btnDeleteKeyPair.Location = new System.Drawing.Point(339, 220);
             this.btnDeleteKeyPair.Name = "btnDeleteKeyPair";
             this.btnDeleteKeyPair.Size = new System.Drawing.Size(111, 23);
             this.btnDeleteKeyPair.TabIndex = 6;
@@ -107,11 +108,21 @@
             this.btnDeleteKeyPair.UseVisualStyleBackColor = true;
             this.btnDeleteKeyPair.Click += new System.EventHandler(this.btnDeleteKeyPair_Click);
             // 
+            // lblFingerPrint
+            // 
+            this.lblFingerPrint.AutoSize = true;
+            this.lblFingerPrint.Location = new System.Drawing.Point(53, 158);
+            this.lblFingerPrint.Name = "lblFingerPrint";
+            this.lblFingerPrint.Size = new System.Drawing.Size(66, 13);
+            this.lblFingerPrint.TabIndex = 7;
+            this.lblFingerPrint.Text = "Finger Print :";
+            // 
             // frmYourKeys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 243);
+            this.ClientSize = new System.Drawing.Size(501, 257);
+            this.Controls.Add(this.lblFingerPrint);
             this.Controls.Add(this.btnDeleteKeyPair);
             this.Controls.Add(this.btnUpdateKeyPair);
             this.Controls.Add(this.btnAddKeyPair);
@@ -122,6 +133,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(517, 296);
+            this.MinimumSize = new System.Drawing.Size(517, 296);
             this.Name = "frmYourKeys";
             this.Text = "Manage Your Keys";
             this.ResumeLayout(false);
@@ -138,5 +151,6 @@
         private System.Windows.Forms.Button btnAddKeyPair;
         private System.Windows.Forms.Button btnUpdateKeyPair;
         private System.Windows.Forms.Button btnDeleteKeyPair;
+        private System.Windows.Forms.Label lblFingerPrint;
     }
 }
