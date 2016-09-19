@@ -445,8 +445,18 @@ namespace TextCrypt
 
                 if (result == DialogResult.OK)
                 {
-                    fileContents = File.ReadAllBytes(fileOpen.FileName);
-                    txtMainText.Text = "<" + Path.GetFileName(fileOpen.FileName) + ">\n" + Convert.ToBase64String(fileContents, Base64FormattingOptions.InsertLineBreaks);
+                    long length = new System.IO.FileInfo(fileOpen.FileName).Length;
+
+                    // Check Max file length
+                    if (length < 10000000)
+                    {
+                        fileContents = File.ReadAllBytes(fileOpen.FileName);
+                        txtMainText.Text = "<" + Path.GetFileName(fileOpen.FileName) + ">\n" + Convert.ToBase64String(fileContents, Base64FormattingOptions.InsertLineBreaks);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cannot upload file, must be < 10 MB!", "File Upload Status");
+                    }
                 }
 
                 if (fileContents.Length == 0)
