@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using System.Drawing;
 
 namespace TextCrypt
 {
@@ -105,7 +106,11 @@ namespace TextCrypt
             string pKey;
 
             // Get a new key name
+            getNewKey.Location = new Point(this.Location.X + 10, this.Location.Y + 10);
+            getNewKey.StartPosition = FormStartPosition.Manual;
+
             getNewKey.ShowDialog();
+
             string keyName = getNewKey.newKey;
             if (keyName == String.Empty) return;
 
@@ -117,7 +122,11 @@ namespace TextCrypt
             }
 
             // Get a new public key
+            getPubKey.Location = new Point(this.Location.X + 10, this.Location.Y + 10);
+            getPubKey.StartPosition = FormStartPosition.Manual;
+
             getPubKey.ShowDialog();
+
             string pub = getPubKey.newKey;
             if (pub == String.Empty) return;
 
@@ -192,7 +201,11 @@ namespace TextCrypt
             }
 
             // Get a new public key
+            getPubKey.Location = new Point(this.Location.X + 10, this.Location.Y + 10);
+            getPubKey.StartPosition = FormStartPosition.Manual;
+
             getPubKey.ShowDialog();
+
             string pub = getPubKey.newKey;
             if (pub == String.Empty) return;
 

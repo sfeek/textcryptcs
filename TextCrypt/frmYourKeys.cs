@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Drawing;
 
 namespace TextCrypt
 {
@@ -133,6 +134,9 @@ namespace TextCrypt
             string keyName;
 
             // Show the GetNewKey dialog
+            getNewKey.Location = new Point(this.Location.X + 10, this.Location.Y + 10);
+            getNewKey.StartPosition = FormStartPosition.Manual;
+
             getNewKey.ShowDialog();
             keyName = getNewKey.newKey;
             if (keyName == String.Empty) return;
@@ -179,6 +183,9 @@ namespace TextCrypt
             if (yesno == DialogResult.No) return;
 
             // Show the Get Password Dialog
+            password2.Location = new Point(this.Location.X + 10, this.Location.Y + 10);
+            password2.StartPosition = FormStartPosition.Manual;
+
             password2.ShowDialog();
             string password = password2.Password;
 

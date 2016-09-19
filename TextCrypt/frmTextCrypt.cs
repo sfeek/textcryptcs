@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.IO;
 using System.Text;
+using System.Drawing;
 
 namespace TextCrypt
 {
@@ -121,7 +122,12 @@ namespace TextCrypt
         private void btnFriendsKeys_Click(object sender, EventArgs e)
         {
             friendsKeys.keyStorePath = keyStorePath;
+
+            friendsKeys.Location = new Point(this.Location.X + 10, this.Location.Y + 50);
+            friendsKeys.StartPosition = FormStartPosition.Manual;
+
             friendsKeys.ShowDialog();
+
             updateKeyPairList();
         }
 
@@ -129,7 +135,12 @@ namespace TextCrypt
         private void btnYourKeys_Click(object sender, EventArgs e)
         {
             yourKeys.keyStorePath = keyStorePath;
+
+            yourKeys.Location = new Point(this.Location.X + 10, this.Location.Y + 50);
+            yourKeys.StartPosition = FormStartPosition.Manual;
+
             yourKeys.ShowDialog();
+
             updateKeyPairList();
         }
 
@@ -232,7 +243,11 @@ namespace TextCrypt
             {
 
                 // Show the Get Password Dialog
+                password1.Location = new Point(this.Location.X + 10, this.Location.Y + 50);
+                password1.StartPosition = FormStartPosition.Manual;
+
                 password1.ShowDialog();
+
                 string password = password1.Password;
                 if (password == String.Empty) return;
 
@@ -345,8 +360,11 @@ namespace TextCrypt
             settings.fileStorePath = fileStorePath;
 
             // Show settings window
-            settings.ShowDialog();
+            settings.Location = new Point(this.Location.X + 10, this.Location.Y + 50);
+            settings.StartPosition = FormStartPosition.Manual;
 
+            settings.ShowDialog();
+            
             keyStorePath = settings.keyStorePath;
             fileStorePath = settings.fileStorePath;
 
@@ -413,26 +431,40 @@ namespace TextCrypt
         // Load a file into the main windows as base64 text
         private void btnFile_Click(object sender, EventArgs e)
         {
+            byte[] fileContents = new byte[0];
+
             // Set cursor as hourglass
             Cursor.Current = Cursors.WaitCursor;
-
-            byte[] fileContents;
-            OpenFileDialog fileOpen = new OpenFileDialog();
-
-            fileOpen.InitialDirectory = fileStorePath;
-
-            DialogResult result = fileOpen.ShowDialog();
-
-            if (result == DialogResult.OK)
+            try
             {
-                fileContents = File.ReadAllBytes(fileOpen.FileName);
-                txtMainText.Text = "<" + Path.GetFileName(fileOpen.FileName) + ">\n" + Convert.ToBase64String(fileContents,Base64FormattingOptions.InsertLineBreaks);
-            }
+                OpenFileDialog fileOpen = new OpenFileDialog();
 
-            MessageBox.Show("File copied into Cipher window.\nDon't forget to press the Encrypt button!", "File Upload Status");
-            
+                fileOpen.InitialDirectory = fileStorePath;
+
+                DialogResult result = fileOpen.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    fileContents = File.ReadAllBytes(fileOpen.FileName);
+                    txtMainText.Text = "<" + Path.GetFileName(fileOpen.FileName) + ">\n" + Convert.ToBase64String(fileContents, Base64FormattingOptions.InsertLineBreaks);
+                }
+
+                if (fileContents.Length == 0)
+                {
+                    // Set cursor as default arrow
+                    Cursor.Current = Cursors.Default;
+                    return;
+                }
+
+                MessageBox.Show("File copied into Cipher window.\nDon't forget to press the Encrypt button!", "File Upload Status");
+            }
+            catch
+            {
+                MessageBox.Show("Could not open a file!", "File Open Error");
+            }
             // Set cursor as default arrow
             Cursor.Current = Cursors.Default;
+            
         }
     }
 }
