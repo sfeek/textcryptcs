@@ -476,5 +476,13 @@ namespace TextCrypt
             Cursor.Current = Cursors.Default;
             
         }
+
+        private void txtMainText_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control & e.KeyCode == Keys.A)
+            {
+                txtMainText.SelectAll();
+            }
+        }
     }
 }

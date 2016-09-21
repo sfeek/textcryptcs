@@ -53,6 +53,7 @@
             this.txtMainText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtMainText.Size = new System.Drawing.Size(560, 348);
             this.txtMainText.TabIndex = 0;
+            this.txtMainText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMainText_KeyDown);
             // 
             // btnClear
             // 
