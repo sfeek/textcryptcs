@@ -476,7 +476,7 @@ namespace TextCrypt
             
         }
 
-        // All Ctrl-A for Select All functionality - Thanks James Nearn!
+        // Add Ctrl-A for Select All functionality to main window - Thanks James Nearn!
         private void txtMainText_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control & e.KeyCode == Keys.A)
