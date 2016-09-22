@@ -7,7 +7,7 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="TextCrypt.exe.manifest" size="3950">
+    <dependentAssembly dependencyType="install" codebase="Application Files\TextCrypt_2_0_9_0\TextCrypt.exe.manifest" size="3950">
       <assemblyIdentity name="TextCrypt.exe" version="2.0.9.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>

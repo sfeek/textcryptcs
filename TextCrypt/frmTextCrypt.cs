@@ -427,7 +427,6 @@ namespace TextCrypt
             updateKeyPairList();
         }
 
-
         // Load a file into the main windows as base64 text
         private void btnFile_Click(object sender, EventArgs e)
         {
@@ -477,6 +476,7 @@ namespace TextCrypt
             
         }
 
+        // All Ctrl-A for Select All functionality - Thanks James Nearn!
         private void txtMainText_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control & e.KeyCode == Keys.A)
