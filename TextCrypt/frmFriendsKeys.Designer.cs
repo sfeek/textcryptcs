@@ -36,6 +36,7 @@
             this.cmbPublicKeyName = new System.Windows.Forms.ComboBox();
             this.btnUpdateKey = new System.Windows.Forms.Button();
             this.lblFingerPrint = new System.Windows.Forms.Label();
+            this.btnCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPublicKey
@@ -105,11 +106,22 @@
             this.lblFingerPrint.TabIndex = 9;
             this.lblFingerPrint.Text = "Finger Print :";
             // 
+            // btnCopy
+            // 
+            this.btnCopy.Location = new System.Drawing.Point(339, 178);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(75, 23);
+            this.btnCopy.TabIndex = 10;
+            this.btnCopy.Text = "Copy";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
             // frmFriendsKeys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 257);
+            this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.lblFingerPrint);
             this.Controls.Add(this.btnUpdateKey);
             this.Controls.Add(this.cmbPublicKeyName);
@@ -138,5 +150,6 @@
         private System.Windows.Forms.ComboBox cmbPublicKeyName;
         private System.Windows.Forms.Button btnUpdateKey;
         private System.Windows.Forms.Label lblFingerPrint;
+        private System.Windows.Forms.Button btnCopy;
     }
 }

@@ -256,5 +256,11 @@ namespace TextCrypt
         {
             updateKeyPairList();
         }
+
+        // Copy Button
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            if (txtPublicKey.Text != String.Empty) Clipboard.SetText(txtPublicKey.Text);
+        }
     }
 }

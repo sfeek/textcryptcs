@@ -185,7 +185,7 @@
             this.MaximumSize = new System.Drawing.Size(600, 510);
             this.MinimumSize = new System.Drawing.Size(600, 510);
             this.Name = "frmTextCrypt";
-            this.Text = "Text Crypt v2.09";
+            this.Text = "Text Crypt v2.10";
             this.Load += new System.EventHandler(this.frmTextCrypt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
